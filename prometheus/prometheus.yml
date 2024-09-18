@@ -70,6 +70,7 @@ scrape_configs:
         - uswest1.resonite.com
         - au1.resonite.com
         - japan1.resonite.com
+        - host.docker.internal:9464
     basic_auth:
       username: metrics
       password_file: /etc/prometheus/passwords/metrics
