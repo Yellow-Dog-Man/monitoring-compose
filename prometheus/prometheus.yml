@@ -9,7 +9,7 @@ scrape_configs:
       - targets: ['uptime-kuma:3001']
     basic_auth:
       username: mykuma
-      password: extremelysecret
+      password_file: /etc/prometheus/passwords/kuma
   - job_name: 'postfix'
     scrape_interval: 30s
     static_configs:
@@ -64,3 +64,12 @@ scrape_configs:
       target_label: instance
     - target_label: __address__
       replacement: resonite-json-exporter:7979
+  - job_name: 'skyfrost-networknodes'
+    static_configs:
+      - targets: 
+        - uswest1.resonite.com
+        - au1.resonite.com
+        - japan1.resonite.com
+    basic_auth:
+      username: metrics
+      password_file: /etc/prometheus/passwords/metrics
