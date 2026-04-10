@@ -1,2 +1,6 @@
 .env
 prometheus/passwords/*
+prometheus/data/*
+uptime-kuma/data/*
+grafana/data/*
+dmarc-reporting/resonite/metrics/*
