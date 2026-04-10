@@ -56,6 +56,7 @@ services:
             - monitor-net
         volumes:
             - ./uptime-kuma/data:/app/data:rw
+            - /var/run/docker.sock:/var/run/docker.sock
 
     dmarc-exporter-resonite:
         image: jgosmann/dmarc-metrics-exporter:0.11.0
