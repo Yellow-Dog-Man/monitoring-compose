@@ -79,3 +79,8 @@ scrape_configs:
     basic_auth:
       username: metrics
       password_file: /etc/prometheus/passwords/metrics
+  - job_name: 'lizzy-metrics'
+    metrics_path: /metrics
+    static_configs:
+      - targets:
+        - https://lizzy.resonite.com
