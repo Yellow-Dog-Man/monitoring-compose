@@ -25,6 +25,7 @@ services:
             GF_AUTH_ANONYMOUS_ORG_NAME: Resonite
             GF_SERVER_DOMAIN: metrics.resonite.com
             GF_SERVER_ROOT_URL: https://metrics.resonite.com/
+            GF_PANELS_DISABLE_SANITIZE_HTML: 'true'
 
     prometheus:
         container_name: prometheus
