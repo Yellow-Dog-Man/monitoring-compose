@@ -23,7 +23,8 @@ services:
             GF_SECURITY_ADMIN_PASSWORD: ${GF_SECURITY_ADMIN_PASSWORD}
             GF_AUTH_ANONYMOUS_ENABLED: 'true'
             GF_AUTH_ANONYMOUS_ORG_NAME: Resonite
-            GF_SERVER_DOMAIN: metrics.yellowdogman.com
+            GF_SERVER_DOMAIN: metrics.resonite.com
+            GF_SERVER_ROOT_URL: https://metrics.resonite.com/
 
     prometheus:
         container_name: prometheus
